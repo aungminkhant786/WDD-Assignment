@@ -13,14 +13,14 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
                 <img src="images/logo-white.png" alt="Asia Home Studio logo" class="nav-logo">
                 <span class="ms-2">Asia Home Studio</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,23 +33,28 @@
                     <li class="nav-item mx-2"><a class="nav-link active" href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item d-lg-none mx-2"><a class="nav-link" href="login.html">Login</a></li>
-                    <li class="nav-item d-lg-none mx-2"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item d-lg-none mx-2">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item d-lg-none mx-2">
+                        <a class="nav-link" href="login.html#register">Register</a>
+                    </li>
                     <li class="nav-item dropdown d-none d-lg-block mx-2">
                         <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user me-1"></i>
                             Account
-                            <i class="fa-solid fa-angle-down"></i>
+                            <i class="fa-solid fa-angle-down ms-1"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
                             <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><a class="dropdown-item" href="login.html#register">Register</a></li>
                         </ul>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="cart.html">
                             Cart
-                            <i class="fa-solid fa-cart-shopping ms-2"></i>
+                            <i class="fa-solid fa-cart-shopping ms-1"></i>
                         </a>
                     </li>
                 </ul>
@@ -57,11 +62,98 @@
         </div>
     </nav>
 
-    <main class="py-5">
+
+    <main class="py-5 bg-soft">
         <div class="container">
-            <h1 class="mb-4">Contact Us</h1>
+
+            <div class="row align-items-center g-5 mb-5">
+                <div class="col-lg-6">
+                    <h1 class="section-title mb-3">Contact Us</h1>
+                    <p class="shop-header-text mb-4">
+                        We’re here to help — whether you need styling advice, product support, or collaboration details.
+                    </p>
+
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa-solid fa-envelope me-3"></i>
+                            <span>support@asiahomestudio.com</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa-solid fa-phone me-3"></i>
+                            <span>+959 123 456 789</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa-solid fa-location-dot me-3"></i>
+                            <span>Yangon, Myanmar</span>
+                        </div>
+                    </div>
+
+                    <p class="small mb-1">Prefer a quick message?</p>
+                    <p class="small text-muted">Use the form and we’ll get back to you within 24 hours.</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 p-md-5 bg-white rounded-4 shadow-sm">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label small">Name</label>
+                                <input type="text" class="form-control rounded-pill" placeholder="Your name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small">Email</label>
+                                <input type="email" class="form-control rounded-pill" placeholder="you@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small">Subject</label>
+                                <input type="text" class="form-control rounded-pill" placeholder="How can we help?">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small">Message</label>
+                                <textarea class="form-control rounded-4" rows="4"
+                                    placeholder="Write your message here"></textarea>
+                            </div>
+
+                            <button class="btn btn-ash-primary w-100 rounded-pill mt-3">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row g-4 mt-3">
+                <div class="col-12">
+                    <div class="rounded-4 overflow-hidden shadow-sm">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.842735475466!2d96.17341447590267!3d16.834156118505398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1933857148b37%3A0x68e80af9880afb91!2sSweety%20Home%20Living%20Mall%20-%20Yadanar%20Street!5e0!3m2!1sen!2smm!4v1763660267555!5m2!1sen!2smm"
+                            width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
+
+
+    <footer class="site-footer py-4">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6">
+                    <p class="mb-0 small text-footer">© 2025 Asia Home Studio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-md-end justify-content-start gap-3 footer-links">
+                        <span>Privacy</span>
+                        <span>Terms</span>
+                        <span>Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="JS/bootstrap.bundle.min.js"></script>
 </body>

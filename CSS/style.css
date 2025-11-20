@@ -1,124 +1,253 @@
-.navbar-nav .nav-link {
-    color: #ECDFCC !important;
-    padding: 8px 16px;
-    border-radius: 999px;
-    transition: 0.3s ease;
-    font-weight: 500;
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #ECDFCC;
+    color: #181C14;
+    margin: 0;
 }
 
-.navbar-nav .nav-link:hover {
-    background-color: #3C3D37;
-    color: #FFFFFF !important;
+a {
+    text-decoration: none;
 }
 
-.navbar-nav .nav-link.active {
-    background-color: #697565 !important;
-    color: #FFFFFF !important;
-    font-weight: 600;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.dropdown-menu {
+.hero-section {
     background-color: #181C14;
-}
-
-.dropdown-menu .dropdown-item {
     color: #ECDFCC;
 }
 
-.dropdown-menu .dropdown-item:hover {
+.hero-eyebrow {
+    letter-spacing: 0.15em;
+    color: #C5C7B2;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 700;
+}
+
+.hero-text {
+    max-width: 34rem;
+    color: #D7D9C9;
+}
+
+.hero-image-wrapper {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-ash-primary {
+    background-color: #697565;
+    color: #ECDFCC;
+    border-radius: 999px;
+    padding: 0.6rem 1.6rem;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-ash-primary:hover {
+    background-color: #556053;
+    color: #ffffff;
+}
+
+.btn-outline-ash-light {
+    background-color: transparent;
+    border-radius: 999px;
+    padding: 0.6rem 1.6rem;
+    border: 1px solid #ECDFCC;
+    color: #ECDFCC;
+    font-weight: 500;
+}
+
+.btn-outline-ash-light:hover {
+    background-color: #ECDFCC;
+    color: #181C14;
+}
+
+.bg-soft {
+    background-color: #F5EFE3;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #181C14;
+}
+
+.link-view-all {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #697565;
+}
+
+.link-view-all:hover {
+    color: #556053;
+}
+
+.product-card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+
+.product-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.product-price {
+    font-weight: 700;
+    color: #697565;
+}
+
+.btn-ash-secondary {
+    background-color: #181C14;
+    color: #ECDFCC;
+    border-radius: 999px;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-ash-secondary:hover {
     background-color: #3C3D37;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.navbar {
-    height: 70px;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    position: sticky;
-    top: 0;
-    z-index: 999;
+.about-image-wrapper {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
 }
 
-.nav-logo {
-    height: 56px;
-    max-height: 56px;
-    width: auto;     
-    object-fit: contain;
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.navbar-brand {
+.gallery-thumb {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #181C14;
+}
+
+.gallery-thumb img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    opacity: 0.96;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.gallery-thumb img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 1.8rem 1.4rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    background-color: #697565;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ECDFCC;
+    font-size: 1.1rem;
+}
+
+.site-footer {
+    background-color: #181C14;
+    color: #C5C7B2;
+}
+
+.text-footer {
+    color: #C5C7B2;
+}
+
+.footer-links span {
+    font-size: 0.85rem;
+    color: #C5C7B2;
+}
+
+.shop-page {
+    background-color: #F5EFE3;
+}
+
+.shop-header-text {
+    color: #55584a;
+    max-width: 34rem;
+}
+
+.shop-sort-select {
+    max-width: 260px;
+    border-radius: 999px;
+    border: 1px solid #CFC7B7;
+    font-size: 0.9rem;
+    background-color: #fff;
+}
+
+.shop-filters .btn-filter {
+    border-radius: 999px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    background-color: #E3DDD0;
+    color: #35372f;
+}
+
+.shop-filters .btn-filter:hover {
+    background-color: #D5CEBF;
+}
+
+.shop-filters .btn-filter.active {
+    background-color: #697565;
+    color: #ECDFCC;
+    border-color: #697565;
+}
+
+.product-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #8b8f7a;
+}
+
+.shop-info-strip {
+    border-top: 1px solid #D4CCBC;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+}
+
+.shop-info-item {
+    font-size: 0.9rem;
+    color: #4b4e40;
     display: flex;
     align-items: center;
-}
-
-.navbar-collapse {
-    background-color: #181C14;
-    transition: all 0.3s ease;
-}
-
-.navbar-nav .nav-link {
-    color: #ECEFCC !important;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #C4C4C4 !important;
-}
-.navbar-brand:hover {
-    color: #ECEFCC !important;
-    opacity: 0.8;
-}
-
-
-@media (max-width: 991.98px) {
-    .navbar .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-.navbar-collapse {
-    background-color: #181C14;
-    padding: 10px 20px;
-}
-
-.navbar-nav {
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-}
-.nav-link {
-    position: relative;
-    padding-bottom: 5px;
-}
-
-.nav-link::after {
-    content:"";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background: #697565;
-    transition: 0.3s;
-    border-radius: 2px;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
-.nav-item {
-    margin: 0 8px;
-}
-
-.navbar-brand img {
-    transition: 0.2s ease;
-}
-
-.navbar-brand img:hover {
-    transform: scale(1.05);
-}
-.nav-link.active {
-    color: #ECEFCC !important; /* lighter */
-    font-weight: 600;
 }

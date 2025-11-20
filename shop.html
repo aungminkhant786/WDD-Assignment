@@ -19,8 +19,7 @@
                 <img src="images/logo-white.png" alt="Asia Home Studio logo" class="nav-logo">
                 <span class="ms-2">Asia Home Studio</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,23 +32,28 @@
                     <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item d-lg-none mx-2"><a class="nav-link" href="login.html">Login</a></li>
-                    <li class="nav-item d-lg-none mx-2"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item d-lg-none mx-2">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item d-lg-none mx-2">
+                        <a class="nav-link" href="login.html#register">Register</a>
+                    </li>
                     <li class="nav-item dropdown d-none d-lg-block mx-2">
                         <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user me-1"></i>
                             Account
-                            <i class="fa-solid fa-angle-down"></i>
+                            <i class="fa-solid fa-angle-down ms-1"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
                             <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><a class="dropdown-item" href="login.html#register">Register</a></li>
                         </ul>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="cart.html">
                             Cart
-                            <i class="fa-solid fa-cart-shopping ms-2"></i>
+                            <i class="fa-solid fa-cart-shopping ms-1"></i>
                         </a>
                     </li>
                 </ul>
@@ -57,11 +61,285 @@
         </div>
     </nav>
 
-    <main class="py-5">
-        <div class="container">
-            <h1 class="mb-4">Shop</h1>
-        </div>
+    <main class="shop-page">
+        <section class="py-5 bg-soft">
+            <div class="container">
+                <div class="row align-items-center g-3 mb-4">
+                    <div class="col-lg-8">
+                        <h1 class="section-title mb-2">Shop</h1>
+                        <p class="shop-header-text mb-0">
+                            Browse our curated selection of furniture, lighting and decor to shape your ideal home.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-lg-end justify-content-start">
+                        <select class="form-select shop-sort-select">
+                            <option selected>Sort by: Recommended</option>
+                            <option>Sort by: Price (Low to High)</option>
+                            <option>Sort by: Price (High to Low)</option>
+                            <option>Sort by: Newest</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="shop-filters d-flex flex-wrap gap-2 mb-4">
+                    <button class="btn btn-filter active">All</button>
+                    <button class="btn btn-filter">Furniture</button>
+                    <button class="btn btn-filter">Lighting</button>
+                    <button class="btn btn-filter">Decor</button>
+                    <button class="btn btn-filter">Textiles</button>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <img src="images/product-chair.jpg" class="card-img-top" alt="Olive Accent Chair">
+                            <div class="card-body">
+                                <p class="product-tag mb-1">Furniture</p>
+                                <h5 class="card-title">Olive Accent Chair</h5>
+                                <p class="card-text small mb-2">
+                                    Soft fabric seat with natural wood legs, perfect for a cozy reading corner.
+                                </p>
+                                <p class="product-price mb-3">$189</p>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="product-detail.html#chair" class="btn btn-ash-secondary w-100">View
+                                        Details</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                            style="max-width: 80px; border-radius: 999px;">
+                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <img src="images/product-lamp.jpg" class="card-img-top" alt="Terracotta Pendant Lamp">
+                            <div class="card-body">
+                                <p class="product-tag mb-1">Lighting</p>
+                                <h5 class="card-title">Terracotta Pendant Lamp</h5>
+                                <p class="card-text small mb-2">
+                                    Warm-toned pendant lighting inspired by traditional clay craftsmanship.
+                                </p>
+                                <p class="product-price mb-3">$129</p>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="product-detail.html#terracotta-lamp"
+                                        class="btn btn-ash-secondary w-100">View Details</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                            style="max-width: 80px; border-radius: 999px;">
+                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <img src="images/product-shelf.jpg" class="card-img-top" alt="Walnut Wall Shelf">
+                            <div class="card-body">
+                                <p class="product-tag mb-1">Decor</p>
+                                <h5 class="card-title">Walnut Wall Shelf</h5>
+                                <p class="card-text small mb-2">
+                                    Minimal floating shelf to display plants, books and personal objects.
+                                </p>
+                                <p class="product-price mb-3">$79</p>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="product-detail.html#shelf" class="btn btn-ash-secondary w-100">View
+                                        Details</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                            style="max-width: 80px; border-radius: 999px;">
+                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <img src="images/product-coffeetable.jpg" class="card-img-top" alt="Oak Coffee Table">
+                            <div class="card-body">
+                                <p class="product-tag mb-1">Furniture</p>
+                                <h5 class="card-title">Low Oak Coffee Table</h5>
+                                <p class="card-text small mb-2">
+                                    Clean-lined table with rounded corners, ideal for compact living rooms.
+                                </p>
+                                <p class="product-price mb-3">$210</p>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="product-detail.html#coffeetable" class="btn btn-ash-secondary w-100">View
+                                        Details</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                            style="max-width: 80px; border-radius: 999px;">
+                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <img src="images/product-cushions.jpg" class="card-img-top" alt="Linen Cushion Set">
+                            <div class="card-body">
+                                <p class="product-tag mb-1">Textiles</p>
+                                <h5 class="card-title">Linen Cushion Set</h5>
+                                <p class="card-text small mb-2">
+                                    Set of three cushions in muted tones to layer texture on sofas and beds.
+                                </p>
+                                <p class="product-price mb-3">$59</p>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="product-detail.html#cushions" class="btn btn-ash-secondary w-100">View
+                                        Details</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                            style="max-width: 80px; border-radius: 999px;">
+                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <img src="images/product-floorlamp.jpg" class="card-img-top" alt="Bamboo Floor Lamp">
+                            <div class="card-body">
+                                <p class="product-tag mb-1">Lighting</p>
+                                <h5 class="card-title">Bamboo Floor Lamp</h5>
+                                <p class="card-text small mb-2">
+                                    Soft diffused light with a slender bamboo frame for evening ambience.
+                                </p>
+                                <p class="product-price mb-3">$159</p>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="product-detail.html#floorlamp" class="btn btn-ash-secondary w-100">View
+                                        Details</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                            style="max-width: 80px; border-radius: 999px;">
+                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <img src="images/product-vase.jpg" class="card-img-top" alt="Ceramic Vase">
+                            <div class="card-body">
+                                <p class="product-tag mb-1">Decor</p>
+                                <h5 class="card-title">Handmade Ceramic Vase</h5>
+                                <p class="card-text small mb-2">
+                                    Smooth glazed finish with a traditional handcrafted shape.
+                                </p>
+                                <p class="product-price mb-3">$49</p>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="product-detail.html#vase" class="btn btn-ash-secondary w-100">View
+                                        Details</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                            style="max-width: 80px; border-radius: 999px;">
+                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <img src="images/product-rug.jpg" class="card-img-top" alt="Woven Rug">
+                            <div class="card-body">
+                                <p class="product-tag mb-1">Textiles</p>
+                                <h5 class="card-title">Natural Woven Rug</h5>
+                                <p class="card-text small mb-2">
+                                    Earth-tone rug woven with durable natural fibers.
+                                </p>
+                                <p class="product-price mb-3">$99</p>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="product-detail.html#rug" class="btn btn-ash-secondary w-100">View
+                                        Details</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                            style="max-width: 80px; border-radius: 999px;">
+                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <img src="images/product-lamp2.jpg" class="card-img-top" alt="Table Lamp">
+                            <div class="card-body">
+                                <p class="product-tag mb-1">Lighting</p>
+                                <h5 class="card-title">Soft Glow Table Lamp</h5>
+                                <p class="card-text small mb-2">
+                                    Linen shade table lamp perfect for warm ambient lighting.
+                                </p>
+                                <p class="product-price mb-3">$69</p>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="product-detail.html#lamp2" class="btn btn-ash-secondary w-100">View
+                                        Details</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                            style="max-width: 80px; border-radius: 999px;">
+                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-info-strip mt-5">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="shop-info-item">
+                                <i class="fa-solid fa-box-open me-2"></i>
+                                Free delivery on orders over $250
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="shop-info-item">
+                                <i class="fa-solid fa-rotate-left me-2"></i>
+                                14-day simple returns
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="shop-info-item">
+                                <i class="fa-solid fa-shield-heart me-2"></i>
+                                Secure checkout and payment
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer py-4">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6">
+                    <p class="mb-0 small text-footer">© 2025 Asia Home Studio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-md-end justify-content-start gap-3 footer-links">
+                        <span>Privacy</span>
+                        <span>Terms</span>
+                        <span>Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="JS/bootstrap.bundle.min.js"></script>
 </body>

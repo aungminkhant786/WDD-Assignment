@@ -13,17 +13,20 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
                 <img src="images/logo-white.png" alt="Asia Home Studio logo" class="nav-logo">
                 <span class="ms-2">Asia Home Studio</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
+
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item mx-2"><a class="nav-link" href="shop.html">Shop</a></li>
@@ -32,38 +35,357 @@
                     <li class="nav-item mx-2"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
+
                 <ul class="navbar-nav">
-                    <li class="nav-item d-lg-none mx-2"><a class="nav-link" href="login.html">Login</a></li>
-                    <li class="nav-item d-lg-none mx-2"><a class="nav-link" href="register.html">Register</a></li>
+
+                    <li class="nav-item d-lg-none mx-2">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                    <li class="nav-item d-lg-none mx-2">
+                        <a class="nav-link" href="login.html#register">Register</a>
+                    </li>
+
                     <li class="nav-item dropdown d-none d-lg-block mx-2">
                         <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user me-1"></i>
                             Account
-                            <i class="fa-solid fa-angle-down"></i>
+                            <i class="fa-solid fa-angle-down ms-1"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
                             <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><a class="dropdown-item" href="login.html#register">Register</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item mx-2">
                         <a class="nav-link active" href="cart.html">
                             Cart
-                            <i class="fa-solid fa-cart-shopping ms-2"></i>
+                            <i class="fa-solid fa-cart-shopping ms-1"></i>
                         </a>
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="py-5">
-        <div class="container">
-            <h1 class="mb-4">Your Cart</h1>
-        </div>
+    <main class="cart-page">
+
+        <section class="py-5 bg-soft">
+            <div class="container">
+
+                <div class="row align-items-center g-3 mb-4">
+                    <div class="col-lg-8">
+                        <h1 class="section-title mb-2">Your Cart</h1>
+                        <p class="shop-header-text mb-0">
+                            Review the pieces in your cart before proceeding to checkout.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-lg-end justify-content-start">
+                        <a href="shop.html" class="btn btn-outline-ash-light">Continue Shopping</a>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="bg-white rounded-4 shadow-sm p-3 p-md-4">
+                            <div class="table-responsive">
+                                <table class="table align-middle mb-0">
+                                    <thead class="small text-muted">
+                                        <tr>
+                                            <th scope="col">Product</th>
+                                            <th scope="col" class="text-end">Price</th>
+                                            <th scope="col" class="text-center">Qty</th>
+                                            <th scope="col" class="text-end">Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-3"
+                                                        style="width: 64px; height: 64px; border-radius: 16px; overflow: hidden;">
+                                                        <img src="images/product-chair.jpg" class="w-100 h-100"
+                                                            style="object-fit: cover;">
+                                                    </div>
+                                                    <div>
+                                                        <div class="small fw-semibold mb-1">Olive Accent Chair</div>
+                                                        <div class="small text-muted">Furniture</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-end small">$189</td>
+                                            <td class="text-center">
+                                                <input type="number" class="form-control form-control-sm mx-auto"
+                                                    value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                            </td>
+                                            <td class="text-end small">$189</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-3"
+                                                        style="width: 64px; height: 64px; border-radius: 16px; overflow: hidden;">
+                                                        <img src="images/product-lamp.jpg" class="w-100 h-100"
+                                                            style="object-fit: cover;">
+                                                    </div>
+                                                    <div>
+                                                        <div class="small fw-semibold mb-1">Terracotta Pendant Lamp
+                                                        </div>
+                                                        <div class="small text-muted">Lighting</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-end small">$129</td>
+                                            <td class="text-center">
+                                                <input type="number" class="form-control form-control-sm mx-auto"
+                                                    value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                            </td>
+                                            <td class="text-end small">$129</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-3"
+                                                        style="width: 64px; height: 64px; border-radius: 16px; overflow: hidden;">
+                                                        <img src="images/product-cushions.jpg" class="w-100 h-100"
+                                                            style="object-fit: cover;">
+                                                    </div>
+                                                    <div>
+                                                        <div class="small fw-semibold mb-1">Linen Cushion Set</div>
+                                                        <div class="small text-muted">Textiles</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-end small">$59</td>
+                                            <td class="text-center">
+                                                <input type="number" class="form-control form-control-sm mx-auto"
+                                                    value="2" min="1" style="max-width: 80px; border-radius: 999px;">
+                                            </td>
+                                            <td class="text-end small">$118</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot class="small">
+                                        <tr>
+                                            <td colspan="4" class="text-end text-muted">
+                                                Prices shown are for demonstration only.
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-white rounded-4 shadow-sm p-4 mb-4">
+                            <h5 class="mb-3">Order Summary</h5>
+                            <div class="d-flex justify-content-between small mb-2">
+                                <span>Subtotal</span>
+                                <span>$436</span>
+                            </div>
+                            <div class="d-flex justify-content-between small mb-2">
+                                <span>Estimated Shipping</span>
+                                <span>$14</span>
+                            </div>
+                            <div class="d-flex justify-content-between small mb-3">
+                                <span>Tax</span>
+                                <span>$0</span>
+                            </div>
+                            <hr class="my-3">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="fw-semibold">Total</span>
+                                <span class="fw-semibold">$450</span>
+                            </div>
+                            <button type="button" class="btn btn-ash-primary w-100 rounded-pill mb-2"
+                                data-bs-toggle="modal" data-bs-target="#voucherModal">
+                                Proceed to Checkout
+                            </button>
+                            <a href="shop.html" class="btn btn-ash-secondary w-100 rounded-pill">Continue Shopping</a>
+                        </div>
+
+                        <div class="bg-white rounded-4 shadow-sm p-3 small">
+                            <div class="d-flex align-items-start">
+                                <i class="fa-solid fa-shield-heart me-2 mt-1"></i>
+                                <p class="mb-0">
+                                    Your payment is processed securely. We do not store your card details on this site.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-5">
+                        <h2 class="section-title mb-2" style="font-size: 1.6rem;">Have a question about your cart?</h2>
+                        <p class="mb-3">
+                            If you are unsure about sizes, colors or how these pieces will fit your space, send us a
+                            quick message and we will get back to you with simple recommendations.
+                        </p>
+                        <p class="small text-muted mb-0">
+                            We aim to respond to all customer inquiries within one working day.
+                        </p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="bg-white rounded-4 shadow-sm p-4 p-md-5">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label small">Name</label>
+                                        <input type="text" class="form-control rounded-pill" placeholder="Your name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small">Email</label>
+                                        <input type="email" class="form-control rounded-pill"
+                                            placeholder="you@example.com">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small">Subject</label>
+                                        <input type="text" class="form-control rounded-pill"
+                                            placeholder="Question about my cart or product">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small">Message</label>
+                                        <textarea class="form-control rounded-4" rows="4"
+                                            placeholder="Tell us which item you are asking about and how we can help."></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn btn-ash-primary rounded-pill mt-3 w-100">
+                                    Send Inquiry
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <footer class="site-footer py-4">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6">
+                    <p class="mb-0 small text-footer">© 2025 Asia Home Studio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-md-end justify-content-start gap-3 footer-links">
+                        <a href="privacy.html">Privacy</a>
+                        <a href="terms.html">Terms</a>
+                        <a href="contact.html">Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="voucherModal" tabindex="-1" aria-labelledby="voucherModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="voucherModalLabel">Order Voucher</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body pt-2 pb-3">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <p class="small mb-1 fw-semibold">Asia Home Studio</p>
+                            <p class="small mb-0">
+                                Yangon, Myanmar<br>
+                                support@asiahomestudio.com
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <p class="small mb-1"><span class="fw-semibold">Voucher No:</span> AHS-2025-001</p>
+                            <p class="small mb-0"><span class="fw-semibold">Date:</span> 01 Jan 2025</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="table-responsive">
+                        <table class="table table-sm align-middle">
+                            <thead class="small text-muted">
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col" class="text-center">Qty</th>
+                                    <th scope="col" class="text-end">Price</th>
+                                    <th scope="col" class="text-end">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody class="small">
+                                <tr>
+                                    <td>Olive Accent Chair</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-end">$189</td>
+                                    <td class="text-end">$189</td>
+                                </tr>
+                                <tr>
+                                    <td>Terracotta Pendant Lamp</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-end">$129</td>
+                                    <td class="text-end">$129</td>
+                                </tr>
+                                <tr>
+                                    <td>Linen Cushion Set</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-end">$59</td>
+                                    <td class="text-end">$118</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <p class="small text-muted mb-0">
+                                This voucher is for demonstration purposes only and does not represent a real
+                                transaction.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="border rounded-4 p-3 small ms-md-auto" style="max-width: 260px;">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Subtotal</span>
+                                    <span>$436</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Shipping</span>
+                                    <span>$14</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Tax</span>
+                                    <span>$0</span>
+                                </div>
+                                <hr class="my-2">
+                                <div class="d-flex justify-content-between fw-semibold">
+                                    <span>Total</span>
+                                    <span>$450</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-ash-secondary rounded-pill"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-ash-primary rounded-pill" onclick="window.print()">Print
+                        Voucher</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="JS/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
