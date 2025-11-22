@@ -15,61 +15,53 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-                <img src="images/logo-white.png" alt="Asia Home Studio logo" class="nav-logo">
-                <span class="ms-2">Asia Home Studio</span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="shop.html">Shop</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-
-                <ul class="navbar-nav">
-
-                    <li class="nav-item d-lg-none mx-2">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-
-                    <li class="nav-item d-lg-none mx-2">
-                        <a class="nav-link" href="login.html#register">Register</a>
-                    </li>
-
-                    <li class="nav-item dropdown d-none d-lg-block mx-2">
-                        <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
-                            data-bs-toggle="dropdown">
-                            <i class="fa-solid fa-user me-1"></i>
-                            Account
-                            <i class="fa-solid fa-angle-down ms-1"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><a class="dropdown-item" href="login.html#register">Register</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active" href="cart.html">
-                            Cart
-                            <i class="fa-solid fa-cart-shopping ms-1"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+            <img src="images/logo-white.png" alt="Asia Home Studio logo" class="nav-logo">
+            <span class="ms-2">Asia Home Studio</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item d-lg-none mx-2">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item d-lg-none mx-2">
+                    <a class="nav-link" href="login.html#register">Register</a>
+                </li>
+                <li class="nav-item dropdown d-none d-lg-block mx-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-user me-1"></i>
+                        Account
+                        <i class="fa-solid fa-angle-down ms-1"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="login.html#register">Register</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="cart.html">
+                        Cart
+                        <i class="fa-solid fa-cart-shopping ms-1"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
+
 
     <main class="cart-page">
 
@@ -82,9 +74,6 @@
                         <p class="shop-header-text mb-0">
                             Review the pieces in your cart before proceeding to checkout.
                         </p>
-                    </div>
-                    <div class="col-lg-4 d-flex justify-content-lg-end justify-content-start">
-                        <a href="shop.html" class="btn btn-outline-ash-light">Continue Shopping</a>
                     </div>
                 </div>
 
@@ -101,79 +90,8 @@
                                             <th scope="col" class="text-end">Subtotal</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="me-3"
-                                                        style="width: 64px; height: 64px; border-radius: 16px; overflow: hidden;">
-                                                        <img src="images/product-chair.jpg" class="w-100 h-100"
-                                                            style="object-fit: cover;">
-                                                    </div>
-                                                    <div>
-                                                        <div class="small fw-semibold mb-1">Olive Accent Chair</div>
-                                                        <div class="small text-muted">Furniture</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="text-end small">$189</td>
-                                            <td class="text-center">
-                                                <input type="number" class="form-control form-control-sm mx-auto"
-                                                    value="1" min="1" style="max-width: 80px; border-radius: 999px;">
-                                            </td>
-                                            <td class="text-end small">$189</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="me-3"
-                                                        style="width: 64px; height: 64px; border-radius: 16px; overflow: hidden;">
-                                                        <img src="images/product-lamp.jpg" class="w-100 h-100"
-                                                            style="object-fit: cover;">
-                                                    </div>
-                                                    <div>
-                                                        <div class="small fw-semibold mb-1">Terracotta Pendant Lamp
-                                                        </div>
-                                                        <div class="small text-muted">Lighting</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="text-end small">$129</td>
-                                            <td class="text-center">
-                                                <input type="number" class="form-control form-control-sm mx-auto"
-                                                    value="1" min="1" style="max-width: 80px; border-radius: 999px;">
-                                            </td>
-                                            <td class="text-end small">$129</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="me-3"
-                                                        style="width: 64px; height: 64px; border-radius: 16px; overflow: hidden;">
-                                                        <img src="images/product-cushions.jpg" class="w-100 h-100"
-                                                            style="object-fit: cover;">
-                                                    </div>
-                                                    <div>
-                                                        <div class="small fw-semibold mb-1">Linen Cushion Set</div>
-                                                        <div class="small text-muted">Textiles</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="text-end small">$59</td>
-                                            <td class="text-center">
-                                                <input type="number" class="form-control form-control-sm mx-auto"
-                                                    value="2" min="1" style="max-width: 80px; border-radius: 999px;">
-                                            </td>
-                                            <td class="text-end small">$118</td>
-                                        </tr>
+                                    <tbody id="cart-table-body">
                                     </tbody>
-                                    <tfoot class="small">
-                                        <tr>
-                                            <td colspan="4" class="text-end text-muted">
-                                                Prices shown are for demonstration only.
-                                            </td>
-                                        </tr>
-                                    </tfoot>
                                 </table>
                             </div>
                         </div>
@@ -184,26 +102,32 @@
                             <h5 class="mb-3">Order Summary</h5>
                             <div class="d-flex justify-content-between small mb-2">
                                 <span>Subtotal</span>
-                                <span>$436</span>
+                                <span id="summary-subtotal">$0</span>
                             </div>
                             <div class="d-flex justify-content-between small mb-2">
                                 <span>Estimated Shipping</span>
-                                <span>$14</span>
+                                <span id="summary-shipping">$0</span>
                             </div>
                             <div class="d-flex justify-content-between small mb-3">
                                 <span>Tax</span>
-                                <span>$0</span>
+                                <span id="summary-tax">$0</span>
                             </div>
                             <hr class="my-3">
                             <div class="d-flex justify-content-between mb-3">
                                 <span class="fw-semibold">Total</span>
-                                <span class="fw-semibold">$450</span>
+                                <span class="fw-semibold" id="summary-total">$0</span>
                             </div>
-                            <button type="button" class="btn btn-ash-primary w-100 rounded-pill mb-2"
-                                data-bs-toggle="modal" data-bs-target="#voucherModal">
+                            <button type="button" id="checkoutButton" class="btn btn-ash-primary w-100 rounded-pill mb-2">
                                 Proceed to Checkout
                             </button>
-                            <a href="shop.html" class="btn btn-ash-secondary w-100 rounded-pill">Continue Shopping</a>
+                            <a href="shop.html" class="btn btn-ash-secondary w-100 rounded-pill mb-2">Continue
+                                Shopping</a>
+                            <button type="button" id="clearCartBtn" class="btn w-100 rounded-pill"
+                                style="border: 1px solid #3C3D37; color: #3C3D37; background-color: transparent;">
+                                Clear Cart
+                            </button>
+
+
                         </div>
 
                         <div class="bg-white rounded-4 shadow-sm p-3 small">
@@ -320,25 +244,7 @@
                                     <th scope="col" class="text-end">Subtotal</th>
                                 </tr>
                             </thead>
-                            <tbody class="small">
-                                <tr>
-                                    <td>Olive Accent Chair</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-end">$189</td>
-                                    <td class="text-end">$189</td>
-                                </tr>
-                                <tr>
-                                    <td>Terracotta Pendant Lamp</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-end">$129</td>
-                                    <td class="text-end">$129</td>
-                                </tr>
-                                <tr>
-                                    <td>Linen Cushion Set</td>
-                                    <td class="text-center">2</td>
-                                    <td class="text-end">$59</td>
-                                    <td class="text-end">$118</td>
-                                </tr>
+                            <tbody class="small" id="voucher-table-body">
                             </tbody>
                         </table>
                     </div>
@@ -354,20 +260,20 @@
                             <div class="border rounded-4 p-3 small ms-md-auto" style="max-width: 260px;">
                                 <div class="d-flex justify-content-between mb-1">
                                     <span>Subtotal</span>
-                                    <span>$436</span>
+                                    <span id="voucher-subtotal">$0</span>
                                 </div>
                                 <div class="d-flex justify-content-between mb-1">
                                     <span>Shipping</span>
-                                    <span>$14</span>
+                                    <span id="voucher-shipping">$0</span>
                                 </div>
                                 <div class="d-flex justify-content-between mb-2">
                                     <span>Tax</span>
-                                    <span>$0</span>
+                                    <span id="voucher-tax">$0</span>
                                 </div>
                                 <hr class="my-2">
                                 <div class="d-flex justify-content-between fw-semibold">
                                     <span>Total</span>
-                                    <span>$450</span>
+                                    <span id="voucher-total">$0</span>
                                 </div>
                             </div>
                         </div>
@@ -385,6 +291,7 @@
     </div>
 
     <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/app.js"></script>
 
 </body>
 

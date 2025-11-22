@@ -14,52 +14,53 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-                <img src="images/logo-white.png" alt="Asia Home Studio logo" class="nav-logo">
-                <span class="ms-2">Asia Home Studio</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link active" href="shop.html">Shop</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item d-lg-none mx-2">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item d-lg-none mx-2">
-                        <a class="nav-link" href="login.html#register">Register</a>
-                    </li>
-                    <li class="nav-item dropdown d-none d-lg-block mx-2">
-                        <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
-                            data-bs-toggle="dropdown">
-                            <i class="fa-solid fa-user me-1"></i>
-                            Account
-                            <i class="fa-solid fa-angle-down ms-1"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><a class="dropdown-item" href="login.html#register">Register</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="cart.html">
-                            Cart
-                            <i class="fa-solid fa-cart-shopping ms-1"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+            <img src="images/logo-white.png" alt="Asia Home Studio logo" class="nav-logo">
+            <span class="ms-2">Asia Home Studio</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item d-lg-none mx-2">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item d-lg-none mx-2">
+                    <a class="nav-link" href="login.html#register">Register</a>
+                </li>
+                <li class="nav-item dropdown d-none d-lg-block mx-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-user me-1"></i>
+                        Account
+                        <i class="fa-solid fa-angle-down ms-1"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="login.html#register">Register</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="cart.html">
+                        Cart
+                        <i class="fa-solid fa-cart-shopping ms-1"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
+
 
     <main class="shop-page">
         <section class="py-5 bg-soft">
@@ -72,25 +73,26 @@
                         </p>
                     </div>
                     <div class="col-lg-4 d-flex justify-content-lg-end justify-content-start">
-                        <select class="form-select shop-sort-select">
-                            <option selected>Sort by: Recommended</option>
-                            <option>Sort by: Price (Low to High)</option>
-                            <option>Sort by: Price (High to Low)</option>
-                            <option>Sort by: Newest</option>
+                        <select class="form-select shop-sort-select" id="shopSortSelect">
+                            <option value="recommended" selected>Sort by: Recommended</option>
+                            <option value="price-asc">Sort by: Price (Low to High)</option>
+                            <option value="price-desc">Sort by: Price (High to Low)</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="shop-filters d-flex flex-wrap gap-2 mb-4">
-                    <button class="btn btn-filter active">All</button>
-                    <button class="btn btn-filter">Furniture</button>
-                    <button class="btn btn-filter">Lighting</button>
-                    <button class="btn btn-filter">Decor</button>
-                    <button class="btn btn-filter">Textiles</button>
+                    <button class="btn btn-filter active" type="button" data-filter="all">All</button>
+                    <button class="btn btn-filter" type="button" data-filter="furniture">Furniture</button>
+                    <button class="btn btn-filter" type="button" data-filter="lighting">Lighting</button>
+                    <button class="btn btn-filter" type="button" data-filter="decor">Decor</button>
+                    <button class="btn btn-filter" type="button" data-filter="textiles">Textiles</button>
                 </div>
 
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
+                <div class="row g-4" id="productGrid">
+
+                    <div class="col-md-6 col-lg-4 product-item" data-id="chair" data-name="Olive Accent Chair"
+                        data-price="189" data-category="furniture">
                         <div class="card product-card h-100">
                             <img src="images/product-chair.jpg" class="card-img-top" alt="Olive Accent Chair">
                             <div class="card-body">
@@ -104,16 +106,17 @@
                                     <a href="product-detail.html#chair" class="btn btn-ash-secondary w-100">View
                                         Details</a>
                                     <div class="d-flex align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
-                                            style="max-width: 80px; border-radius: 999px;">
-                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                        <input type="number" class="form-control form-control-sm product-qty-input"
+                                            value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                        <a href="#" class="btn btn-ash-primary w-100 add-to-cart-btn">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 product-item" data-id="terracotta-lamp"
+                        data-name="Terracotta Pendant Lamp" data-price="129" data-category="lighting">
                         <div class="card product-card h-100">
                             <img src="images/product-lamp.jpg" class="card-img-top" alt="Terracotta Pendant Lamp">
                             <div class="card-body">
@@ -127,16 +130,17 @@
                                     <a href="product-detail.html#terracotta-lamp"
                                         class="btn btn-ash-secondary w-100">View Details</a>
                                     <div class="d-flex align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
-                                            style="max-width: 80px; border-radius: 999px;">
-                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                        <input type="number" class="form-control form-control-sm product-qty-input"
+                                            value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                        <a href="#" class="btn btn-ash-primary w-100 add-to-cart-btn">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 product-item" data-id="shelf" data-name="Walnut Wall Shelf"
+                        data-price="79" data-category="decor">
                         <div class="card product-card h-100">
                             <img src="images/product-shelf.jpg" class="card-img-top" alt="Walnut Wall Shelf">
                             <div class="card-body">
@@ -150,16 +154,17 @@
                                     <a href="product-detail.html#shelf" class="btn btn-ash-secondary w-100">View
                                         Details</a>
                                     <div class="d-flex align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
-                                            style="max-width: 80px; border-radius: 999px;">
-                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                        <input type="number" class="form-control form-control-sm product-qty-input"
+                                            value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                        <a href="#" class="btn btn-ash-primary w-100 add-to-cart-btn">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 product-item" data-id="coffeetable" data-name="Low Oak Coffee Table"
+                        data-price="210" data-category="furniture">
                         <div class="card product-card h-100">
                             <img src="images/product-coffeetable.jpg" class="card-img-top" alt="Oak Coffee Table">
                             <div class="card-body">
@@ -173,16 +178,17 @@
                                     <a href="product-detail.html#coffeetable" class="btn btn-ash-secondary w-100">View
                                         Details</a>
                                     <div class="d-flex align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
-                                            style="max-width: 80px; border-radius: 999px;">
-                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                        <input type="number" class="form-control form-control-sm product-qty-input"
+                                            value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                        <a href="#" class="btn btn-ash-primary w-100 add-to-cart-btn">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 product-item" data-id="cushions" data-name="Linen Cushion Set"
+                        data-price="59" data-category="textiles">
                         <div class="card product-card h-100">
                             <img src="images/product-cushions.jpg" class="card-img-top" alt="Linen Cushion Set">
                             <div class="card-body">
@@ -196,16 +202,17 @@
                                     <a href="product-detail.html#cushions" class="btn btn-ash-secondary w-100">View
                                         Details</a>
                                     <div class="d-flex align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
-                                            style="max-width: 80px; border-radius: 999px;">
-                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                        <input type="number" class="form-control form-control-sm product-qty-input"
+                                            value="1" min="1" style="max-width: 80px; border-radius: 999px%;">
+                                        <a href="#" class="btn btn-ash-primary w-100 add-to-cart-btn">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 product-item" data-id="floorlamp" data-name="Bamboo Floor Lamp"
+                        data-price="159" data-category="lighting">
                         <div class="card product-card h-100">
                             <img src="images/product-floorlamp.jpg" class="card-img-top" alt="Bamboo Floor Lamp">
                             <div class="card-body">
@@ -219,16 +226,17 @@
                                     <a href="product-detail.html#floorlamp" class="btn btn-ash-secondary w-100">View
                                         Details</a>
                                     <div class="d-flex align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
-                                            style="max-width: 80px; border-radius: 999px;">
-                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                        <input type="number" class="form-control form-control-sm product-qty-input"
+                                            value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                        <a href="#" class="btn btn-ash-primary w-100 add-to-cart-btn">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 product-item" data-id="vase" data-name="Handmade Ceramic Vase"
+                        data-price="49" data-category="decor">
                         <div class="card product-card h-100">
                             <img src="images/product-vase.jpg" class="card-img-top" alt="Ceramic Vase">
                             <div class="card-body">
@@ -242,16 +250,17 @@
                                     <a href="product-detail.html#vase" class="btn btn-ash-secondary w-100">View
                                         Details</a>
                                     <div class="d-flex align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
-                                            style="max-width: 80px; border-radius: 999px;">
-                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                        <input type="number" class="form-control form-control-sm product-qty-input"
+                                            value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                        <a href="#" class="btn btn-ash-primary w-100 add-to-cart-btn">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 product-item" data-id="rug" data-name="Natural Woven Rug"
+                        data-price="99" data-category="textiles">
                         <div class="card product-card h-100">
                             <img src="images/product-rug.jpg" class="card-img-top" alt="Woven Rug">
                             <div class="card-body">
@@ -265,16 +274,17 @@
                                     <a href="product-detail.html#rug" class="btn btn-ash-secondary w-100">View
                                         Details</a>
                                     <div class="d-flex align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
-                                            style="max-width: 80px; border-radius: 999px;">
-                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                        <input type="number" class="form-control form-control-sm product-qty-input"
+                                            value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                        <a href="#" class="btn btn-ash-primary w-100 add-to-cart-btn">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 product-item" data-id="lamp2" data-name="Soft Glow Table Lamp"
+                        data-price="69" data-category="lighting">
                         <div class="card product-card h-100">
                             <img src="images/product-lamp2.jpg" class="card-img-top" alt="Table Lamp">
                             <div class="card-body">
@@ -288,14 +298,15 @@
                                     <a href="product-detail.html#lamp2" class="btn btn-ash-secondary w-100">View
                                         Details</a>
                                     <div class="d-flex align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" value="1" min="1"
-                                            style="max-width: 80px; border-radius: 999px;">
-                                        <a href="cart.html" class="btn btn-ash-primary w-100">Add to Cart</a>
+                                        <input type="number" class="form-control form-control-sm product-qty-input"
+                                            value="1" min="1" style="max-width: 80px; border-radius: 999px;">
+                                        <a href="#" class="btn btn-ash-primary w-100 add-to-cart-btn">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="shop-info-strip mt-5">
@@ -342,6 +353,8 @@
     </footer>
 
     <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/app.js"></script>
+
 </body>
 
 </html>
